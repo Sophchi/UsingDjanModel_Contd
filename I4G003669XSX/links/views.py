@@ -36,7 +36,7 @@ class PostDeleteApi(generics.DestroyAPIView):
     queryset = Link.objects.filter(active=True)
     serializer_class = LinkSerializer
 
-
+# Two newly added views
 class ActiveLinkView(APIView):
     """
     Returns a list of all active (publicly accessible) links
